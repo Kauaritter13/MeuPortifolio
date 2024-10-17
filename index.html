@@ -1,35 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kauã Ritter - Portfólio</title>
+    <title>Kauã Ritter da Silva - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Menu -->
-    <header id="header">
-        <nav class="navbar">
-            <a href="index.html" id="logo" class="logo">Kauã Ritter</a>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="sobre.html">Sobre Mim</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
+    <header id="header" class="navbar">
+        <div class="logo">
+            <a href="index.html">Kauã Ritter da Silva</a>
+        </div>
+        <nav class="nav-links">
+            <a href="sobre.html">Sobre</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="contato.html">Contato</a>
         </nav>
     </header>
 
-    <!-- Vídeo de Fundo -->
-    <section id="home">
-        <video autoplay muted loop id="video-background">
-            <source src="background.mp4" type="video/mp4">
+    <!-- Vídeo de fundo -->
+    <div class="background-video">
+        <video autoplay muted loop id="bgVideo">
+            <source src="videos/background.mp4" type="video/mp4">
         </video>
-        <div class="content">
-            <h1>Kauã Ritter da Silva</h1>
-            <p>"A cada código, uma nova conquista!"</p> <!-- Frase motivacional -->
-        </div>
-    </section>
+        <div class="overlay"></div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="content">
+        <h1>Kauã Ritter da Silva</h1>
+        <p class="motivational">"A cada código, uma nova conquista!"</p>
+        <button class="cta-btn">Ver Projetos</button>
+    </div>
 
     <script src="scripts.js"></script>
 </body>
