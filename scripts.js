@@ -1,4 +1,4 @@
-// Ocultar Menu ao Rolar para Baixo
+// Ocultar Menu ao Rolar
 let prevScrollPos = window.pageYOffset;
 window.onscroll = function() {
     let currentScrollPos = window.pageYOffset;
@@ -11,3 +11,9 @@ window.onscroll = function() {
     }
     prevScrollPos = currentScrollPos;
 };
+
+// Navegar de volta ao topo ao clicar no nome
+document.querySelector('.logo a').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({top: 0, behavior: 'smooth'});
+});
