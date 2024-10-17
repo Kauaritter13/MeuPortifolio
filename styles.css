@@ -91,7 +91,6 @@ p {
     background-color: #fff;
 }
 
-/* Projetos */
 .projetos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -110,7 +109,6 @@ p {
     transform: scale(1.05);
 }
 
-/* Seção Contato */
 #contato {
     padding: 100px 20px;
     background-color: #f4f4f4;
@@ -142,10 +140,19 @@ button {
 
 /* Responsividade */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 36px;
+    .navbar {
+        flex-direction: column;
     }
-    p {
+
+    .nav-links {
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .content p {
         font-size: 18px;
     }
 }
