@@ -99,3 +99,53 @@ p {
 }
 
 .projeto-card {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.projeto-card:hover {
+    transform: scale(1.05);
+}
+
+/* Seção Contato */
+#contato {
+    padding: 100px 20px;
+    background-color: #f4f4f4;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+    p {
+        font-size: 18px;
+    }
+}
